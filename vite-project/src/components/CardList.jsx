@@ -2,7 +2,7 @@ import useApiData from "../hooks/useApiData";
 import Card from "./Card";
 
 const CardList = ({ page, onPageChange }) => {
-  const apiUrl = `https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=5`; // Adjust the limit based on your preference
+  const apiUrl = `https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=5`;
   const { data, error } = useApiData(apiUrl);
 
   if (error) {
